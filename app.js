@@ -19,7 +19,7 @@ const itemsSchema = {
 };
 
 const Item = mongoose.model("Item", itemsSchema);
-
+// mongoose.model(<CollectionName>, <CollectionSchema>)
 
 const item1 = new Item({
   name: "Welcome to your todolist!"
@@ -34,6 +34,7 @@ const item3 = new Item({
 });
 
 const defaultItems = [item1, item2, item3];
+// An array of default items
 
 const listSchema = {
   name: String,
